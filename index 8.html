@@ -146,7 +146,7 @@ function newUser(){
   var un=st.un.trim();
   if(!un){eM("أدخل اسماً");return;}
   if(LS.g("rh_u_"+un)){eM("هذا الاسم موجود، اختر اسماً آخر");return;}
-  // تم إزالة الانتظار الوهمي لتجنب تعليق الآيفون
+  
   var user={username:un,pI:hashPath(un),step:0,started:false,done:false};
   LS.s("rh_u_"+un,user);
   LS.s("rh_own",un);
